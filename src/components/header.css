@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #eeededdd;
+    font-size: 18px;
+    padding: 0px 10px;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 40px;
+    margin-right: 5px;
+}
+.pages .link{
+    padding: 10px;
+}
+.pages .link.active{
+    background-color: #eeededdd;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.counter{
+    font-weight: 500;
+    min-width: 70px;
+}
+@media screen and (max-width:680px) {
+    .pages{
+        display: none;
+    }
+    
+}
