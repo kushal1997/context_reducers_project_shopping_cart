@@ -2,4 +2,12 @@
     #cartCard img{
         display: none;
     }
+    .pages{
+        display: none;
+    }
   }
+.pages .link.active{
+    background-color: #eeededdd;
+    border-radius: 10px;
+    font-weight: 600;
+}
