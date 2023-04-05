@@ -1,5 +1,7 @@
+import { useCart } from "../context/CardContext";
 
 export const CartCard = ({product}) => {
+  const {removeFromCart}=useCart();
   const {image,name,price} =product;
   return (
     <>
@@ -7,7 +9,7 @@ export const CartCard = ({product}) => {
       <img className="w-[150px] h-[100px] mr-2.5" src={image} alt={name} />
       <p className=" w-[350px] mr-2.5">{name}</p>
       <p className=" w-[100px] mr-2.5">${price}</p>
-      <button className="bg-[#ac0d14] text-white cursor-pointer px-2.5 py-[5px] rounded-[5px] border-0 hover:bg-[#8e090f]">Remove</button>
+      <button onClick={()=> removeFromCart(product)} className="bg-[#ac0d14] text-white cursor-pointer px-2.5 py-[5px] rounded-[5px] border-0 hover:bg-[#8e090f]">Remove</button>
       
     </div>
     </>
