@@ -1,8 +1,6 @@
 import { useCart } from "../context/CardContext"
 import { CartCard } from "../components"
 import {useTitle} from "../hooks/useTitle"
-import img1 from "../assets/1001.jpg"
-import img2 from "../assets/1002.jpg"
 
 export const Cart = () => {
   const {total,cartList} =useCart();
